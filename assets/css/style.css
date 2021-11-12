@@ -1,0 +1,438 @@
+/* ===================== General  ===================== */
+
+/* --------------- Font --------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'LarishNeueSemibold';
+    src: url("../font/LarishNeueSemibold.woff");
+}
+
+/* 
+font-family: 'Work Sans', sans-serif;
+font-family: LarishNeueSemibold; 
+*/
+
+/* --------------- Color --------------- */
+/* 
+color: #fff;
+color: #000; 
+*/
+/* --------------- Styles --------------- */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    width: 1425px;
+}
+
+p {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.7rem;
+    padding-bottom: .3vmax;
+    line-height: 3rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: LarishNeueSemibold;
+}
+
+h1 {
+    font-size: 9rem;
+}
+
+h2 {
+    font-size: 10rem;
+}
+
+h3 {
+    font-size: 9rem;
+    line-height: 9rem;
+}
+
+h4 {
+    font-size: 3rem;
+}
+
+h5 {
+    font-size: 2rem;
+}
+
+h6 {
+    font-size: 9rem;
+    color: black;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+    margin-top: -3.5rem;
+}
+
+.fat {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 2rem;
+    letter-spacing: -0.1rem;
+    padding-bottom: .5vmax;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 18px 48px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 2.2rem;
+    letter-spacing: -0.1rem;
+}
+
+.line-break {
+    display: block;
+}
+
+/* ===================== HEADER ===================== */
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 0 5vmax;
+}
+
+/* --------------- Section 1 --------------- */
+
+header section:nth-of-type(1) {
+    display: flex;
+}
+
+header section:nth-of-type(1) article {
+    width: 49vmax;
+    padding: 7vmax 0;
+}
+
+header section:nth-of-type(1) article:nth-of-type(2) {
+    border-left: 1px solid gray;
+}
+
+/* --------------- Section 2 --------------- */
+
+header section:nth-of-type(2){
+    text-align: center;
+    padding: 4vmax 0;
+}
+
+/* --------------- Section 3 --------------- */
+
+header section:nth-of-type(3) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6vmax;
+}
+
+header section:nth-of-type(3) {
+    padding-right: 4vmax;
+}
+
+
+/* ===================== MAIN ===================== */
+
+
+main img {
+    width: 30%;
+}
+
+
+
+/* --------------- Section 1 --------------- */
+
+main section:nth-of-type(1) {
+    background-color: #000;
+    color: #fff;
+    padding-left: 5vmax;
+    padding-top: 15vmax;
+}
+
+main section:nth-of-type(1) > h2 {
+    padding-left: 4vmax;
+    padding-right: 12vmax;
+}
+
+section:nth-of-type(1) article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 10vmax;
+}
+
+section:nth-of-type(1) article div:nth-of-type(1) {
+    width: 45vmax;
+    padding: 3vmax 0 3vmax 4vmax;
+}
+
+section:nth-of-type(1) article div:nth-of-type(2) {
+    background: url("../img/map.svg") right top/contain no-repeat;
+    /* width: 45vmax; */
+    /* margin-left: auto; */
+    padding: 15vh 0 3vh 0;
+}
+
+
+
+/* --------------- Section 2 --------------- */
+
+/* Article 1 */
+
+section:nth-of-type(2) article:nth-of-type(1) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+section:nth-of-type(2) article:nth-of-type(1) img {
+    width: 45vmax;
+}
+
+section:nth-of-type(2) article:nth-of-type(1) img:nth-of-type(1) {
+    width: 40%;
+    margin-top: 40vh;
+    margin-left: 5vw;
+}
+
+section:nth-of-type(2) article:nth-of-type(1) img:nth-of-type(2) {
+    width: 50%;
+    margin-top: -10vh;
+    margin-bottom: 12vh;
+    margin-left: 35%;
+}
+
+/* Article 2 */
+
+section:nth-of-type(2) article:nth-of-type(2) {
+    width: 34vmax;
+    margin: -7vh auto 0 auto;
+}
+
+
+/* Article 3 */
+
+section:nth-of-type(2) article:nth-of-type(3) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+section:nth-of-type(2) article:nth-of-type(3) img {
+    width: 45vmax;
+}
+
+section:nth-of-type(2) article:nth-of-type(3) img:nth-of-type(1) {
+    width: 50%;
+    margin-top: 24vh;
+    margin-left: 16vw;
+}
+
+section:nth-of-type(2) article:nth-of-type(3) img:nth-of-type(2) {
+    width: 42%;
+    margin-top: -6.5vh;
+    margin-left: auto;
+}
+
+/* Article 4 */
+
+section:nth-of-type(2) article:nth-of-type(4) {
+    padding-bottom: 10vh;
+}
+
+section:nth-of-type(2) article:nth-of-type(4) img {
+    display: block;
+    width: 24vmax;
+    margin-left: auto;
+    margin-right: 14vw;
+    margin-top: -4vh;
+}
+
+
+/* Article 5 */
+
+section:nth-of-type(2) article:nth-of-type(5) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 12vh;
+}
+
+section:nth-of-type(2) article:nth-of-type(5) div:nth-of-type(1) {
+    width: 30vmax;
+    margin-top: -4vh;
+}
+
+section:nth-of-type(2) article:nth-of-type(5) div:nth-of-type(2) {
+    width: 65vmax;
+    padding-right: 30vw;
+}
+
+section:nth-of-type(2) article:nth-of-type(5) img {
+    width: 70%
+}
+
+/* Article 6 */
+
+/* section:nth-of-type(2) article:nth-of-type(6) {
+    padding-bottom: 10vh;
+} */
+
+section:nth-of-type(2) article:nth-of-type(6) img {
+    display: block;
+    width: 34vmax;
+    margin-left: auto;
+    margin-right: 20vw;
+    margin-bottom: -8vh;
+}
+
+
+
+
+
+
+
+
+
+
+/* --------------- Section 3 --------------- */
+
+section:nth-of-type(3) {
+    background-color: #000;
+    color: #fff;
+    padding-left: 8vmax;
+    padding-top: 25vh;
+}
+
+/* Article 1 */
+
+section:nth-of-type(3) article:nth-of-type(1) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 27vh;
+}
+
+section:nth-of-type(3) article:nth-of-type(1) div:nth-of-type(1) {
+    width: 35vmax;
+    margin-top: -5vh;
+}
+
+section:nth-of-type(3) article:nth-of-type(1) div:nth-of-type(2) {
+    width: 50vmax;
+    padding-right: 10vw;
+}
+
+section:nth-of-type(3) article:nth-of-type(1) div:nth-of-type(2) h4 {
+    padding-bottom: 3vh;
+}
+
+
+/* Article 2 */
+
+section:nth-of-type(3) article:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+section:nth-of-type(3) article:nth-of-type(2) img:nth-of-type(1) {
+    width: 55vmax;
+    margin-bottom: -22vh;
+}
+
+section:nth-of-type(3) article:nth-of-type(2) img:nth-of-type(2) {
+    width: 28vmax;
+    margin-top: 24vh;
+    margin-left: -5vw;
+    margin-bottom: -22vh;
+}
+
+section:nth-of-type(3) article:nth-of-type(2) img:nth-of-type(3) {
+    width: 28vmax;
+    margin-top: 10vh;
+    margin-left: -25vw;
+    z-index: 99;
+}
+
+
+
+
+
+/* section:nth-of-type(2) article:nth-of-type(3) img {
+    width: 45vmax;
+} */
+
+
+/* section:nth-of-type(2) article:nth-of-type(3) img:nth-of-type(2) {
+    width: 42%;
+    margin-top: -6.5vh;
+    margin-left: auto;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------- Section 4 --------------- */
+
+section:nth-of-type(4) {
+    padding-left: 5vmax;
+    padding-top: 50vh;
+}
+
+section:nth-of-type(4) article:nth-of-type(1) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+section:nth-of-type(4) article:nth-of-type(1) div {
+    width: 45vmax;
+}
+
+
+/* ===================== FOOTER ===================== */
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding-left: 5vmax;
+}
+
+footer section:nth-of-type(1) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+footer section:nth-of-type(1) article {
+    width: 45vmax;
+}
+
+
+
+footer section:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+footer section:nth-of-type(2) article {
+    width: 45vmax;
+}
+
+
+
+/* --------------- Section 1 --------------- */
+
+
+
+/* --------------- Section 2 --------------- */
