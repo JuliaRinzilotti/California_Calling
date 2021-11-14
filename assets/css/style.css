@@ -61,12 +61,13 @@ h4 {
 }
 
 h5 {
-    font-size: 2rem;
+    font-size: 3.6rem;
+    padding-top: 4vh;
 }
 
 h6 {
     font-size: 9rem;
-    color: black;
+    color: #000;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: white;
     margin-top: -3.5rem;
@@ -88,6 +89,12 @@ a {
     font-size: 2.2rem;
     letter-spacing: -0.1rem;
 }
+
+a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
 
 .line-break {
     display: block;
@@ -135,15 +142,7 @@ header section:nth-of-type(3) {
     padding-right: 4vmax;
 }
 
-
 /* ===================== MAIN ===================== */
-
-
-main img {
-    width: 30%;
-}
-
-
 
 /* --------------- Section 1 --------------- */
 
@@ -152,6 +151,7 @@ main section:nth-of-type(1) {
     color: #fff;
     padding-left: 5vmax;
     padding-top: 15vmax;
+    padding-bottom: 15vh;
 }
 
 main section:nth-of-type(1) > h2 {
@@ -159,45 +159,42 @@ main section:nth-of-type(1) > h2 {
     padding-right: 12vmax;
 }
 
-section:nth-of-type(1) article {
+main section:nth-of-type(1) article {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-top: 10vmax;
+    /* padding-top: 10vmax; */
 }
 
-section:nth-of-type(1) article div:nth-of-type(1) {
+main section:nth-of-type(1) article div:nth-of-type(1) {
     width: 45vmax;
-    padding: 3vmax 0 3vmax 4vmax;
+    padding: 10vmax 0 3vmax 4vmax;
 }
 
-section:nth-of-type(1) article div:nth-of-type(2) {
+main section:nth-of-type(1) article div:nth-of-type(2) {
     background: url("../img/map.svg") right top/contain no-repeat;
-    /* width: 45vmax; */
-    /* margin-left: auto; */
-    padding: 15vh 0 3vh 0;
+    background-size: 80%;
+    padding: 0 0 15vh 0;
 }
-
-
 
 /* --------------- Section 2 --------------- */
 
 /* Article 1 */
 
-section:nth-of-type(2) article:nth-of-type(1) {
+main section:nth-of-type(2) article:nth-of-type(1) {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-section:nth-of-type(2) article:nth-of-type(1) img {
+main section:nth-of-type(2) article:nth-of-type(1) img {
     width: 45vmax;
 }
 
-section:nth-of-type(2) article:nth-of-type(1) img:nth-of-type(1) {
+main section:nth-of-type(2) article:nth-of-type(1) img:nth-of-type(1) {
     width: 40%;
     margin-top: 40vh;
     margin-left: 5vw;
 }
 
-section:nth-of-type(2) article:nth-of-type(1) img:nth-of-type(2) {
+main section:nth-of-type(2) article:nth-of-type(1) img:nth-of-type(2) {
     width: 50%;
     margin-top: -10vh;
     margin-bottom: 12vh;
@@ -206,29 +203,28 @@ section:nth-of-type(2) article:nth-of-type(1) img:nth-of-type(2) {
 
 /* Article 2 */
 
-section:nth-of-type(2) article:nth-of-type(2) {
+main section:nth-of-type(2) article:nth-of-type(2) {
     width: 34vmax;
     margin: -7vh auto 0 auto;
 }
 
-
 /* Article 3 */
 
-section:nth-of-type(2) article:nth-of-type(3) {
+main section:nth-of-type(2) article:nth-of-type(3) {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-section:nth-of-type(2) article:nth-of-type(3) img {
+main section:nth-of-type(2) article:nth-of-type(3) img {
     width: 45vmax;
 }
 
-section:nth-of-type(2) article:nth-of-type(3) img:nth-of-type(1) {
+main section:nth-of-type(2) article:nth-of-type(3) img:nth-of-type(1) {
     width: 50%;
     margin-top: 24vh;
     margin-left: 16vw;
 }
 
-section:nth-of-type(2) article:nth-of-type(3) img:nth-of-type(2) {
+main section:nth-of-type(2) article:nth-of-type(3) img:nth-of-type(2) {
     width: 42%;
     margin-top: -6.5vh;
     margin-left: auto;
@@ -236,11 +232,11 @@ section:nth-of-type(2) article:nth-of-type(3) img:nth-of-type(2) {
 
 /* Article 4 */
 
-section:nth-of-type(2) article:nth-of-type(4) {
+main section:nth-of-type(2) article:nth-of-type(4) {
     padding-bottom: 10vh;
 }
 
-section:nth-of-type(2) article:nth-of-type(4) img {
+main section:nth-of-type(2) article:nth-of-type(4) img {
     display: block;
     width: 24vmax;
     margin-left: auto;
@@ -248,36 +244,31 @@ section:nth-of-type(2) article:nth-of-type(4) img {
     margin-top: -4vh;
 }
 
-
 /* Article 5 */
 
-section:nth-of-type(2) article:nth-of-type(5) {
+main section:nth-of-type(2) article:nth-of-type(5) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-bottom: 12vh;
 }
 
-section:nth-of-type(2) article:nth-of-type(5) div:nth-of-type(1) {
+main section:nth-of-type(2) article:nth-of-type(5) div:nth-of-type(1) {
     width: 30vmax;
     margin-top: -4vh;
 }
 
-section:nth-of-type(2) article:nth-of-type(5) div:nth-of-type(2) {
+main section:nth-of-type(2) article:nth-of-type(5) div:nth-of-type(2) {
     width: 65vmax;
     padding-right: 30vw;
 }
 
-section:nth-of-type(2) article:nth-of-type(5) img {
+main section:nth-of-type(2) article:nth-of-type(5) img {
     width: 70%
 }
 
 /* Article 6 */
 
-/* section:nth-of-type(2) article:nth-of-type(6) {
-    padding-bottom: 10vh;
-} */
-
-section:nth-of-type(2) article:nth-of-type(6) img {
+main section:nth-of-type(2) article:nth-of-type(6) img {
     display: block;
     width: 34vmax;
     margin-left: auto;
@@ -285,18 +276,9 @@ section:nth-of-type(2) article:nth-of-type(6) img {
     margin-bottom: -8vh;
 }
 
-
-
-
-
-
-
-
-
-
 /* --------------- Section 3 --------------- */
 
-section:nth-of-type(3) {
+main section:nth-of-type(3) {
     background-color: #000;
     color: #fff;
     padding-left: 8vmax;
@@ -305,134 +287,200 @@ section:nth-of-type(3) {
 
 /* Article 1 */
 
-section:nth-of-type(3) article:nth-of-type(1) {
+main section:nth-of-type(3) article:nth-of-type(1) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-bottom: 27vh;
 }
 
-section:nth-of-type(3) article:nth-of-type(1) div:nth-of-type(1) {
+main section:nth-of-type(3) article:nth-of-type(1) div:nth-of-type(1) {
     width: 35vmax;
     margin-top: -5vh;
 }
 
-section:nth-of-type(3) article:nth-of-type(1) div:nth-of-type(2) {
+main section:nth-of-type(3) article:nth-of-type(1) div:nth-of-type(2) {
     width: 50vmax;
     padding-right: 10vw;
 }
 
-section:nth-of-type(3) article:nth-of-type(1) div:nth-of-type(2) h4 {
+main section:nth-of-type(3) article:nth-of-type(1) div:nth-of-type(2) h4 {
     padding-bottom: 3vh;
 }
 
-
 /* Article 2 */
 
-section:nth-of-type(3) article:nth-of-type(2) {
+main section:nth-of-type(3) article:nth-of-type(2) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
 }
 
-section:nth-of-type(3) article:nth-of-type(2) img:nth-of-type(1) {
+main section:nth-of-type(3) article:nth-of-type(2) img:nth-of-type(1) {
     width: 55vmax;
     margin-bottom: -22vh;
 }
 
-section:nth-of-type(3) article:nth-of-type(2) img:nth-of-type(2) {
+main section:nth-of-type(3) article:nth-of-type(2) img:nth-of-type(2) {
     width: 28vmax;
     margin-top: 24vh;
     margin-left: -5vw;
     margin-bottom: -22vh;
 }
 
-section:nth-of-type(3) article:nth-of-type(2) img:nth-of-type(3) {
+main section:nth-of-type(3) article:nth-of-type(2) img:nth-of-type(3) {
     width: 28vmax;
-    margin-top: 10vh;
-    margin-left: -25vw;
     z-index: 99;
+    position: absolute;
+    top: 38vmax;
+    left: 60vmax;
 }
 
+.circle {
+    animation-name: rotation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
 
-
-
-
-/* section:nth-of-type(2) article:nth-of-type(3) img {
-    width: 45vmax;
-} */
-
-
-/* section:nth-of-type(2) article:nth-of-type(3) img:nth-of-type(2) {
-    width: 42%;
-    margin-top: -6.5vh;
-    margin-left: auto;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
 
 /* --------------- Section 4 --------------- */
 
-section:nth-of-type(4) {
-    padding-left: 5vmax;
-    padding-top: 50vh;
+main section:nth-of-type(4) {
+    padding-left: 8vmax;
+    padding-top: 70vh;
 }
 
-section:nth-of-type(4) article:nth-of-type(1) {
+/* Article 1 */
+
+main section:nth-of-type(4) article:nth-of-type(1) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-bottom: 27vh;
 }
 
-section:nth-of-type(4) article:nth-of-type(1) div {
-    width: 45vmax;
+main section:nth-of-type(4) article:nth-of-type(1) div:nth-of-type(1) {
+    width: 35vmax;
+    margin-top: -5vh;
+    padding-right: 5vw;
 }
 
+main section:nth-of-type(4) article:nth-of-type(1) div:nth-of-type(2) {
+    width: 50vmax;
+    padding-right: 10vw;
+}
+
+main section:nth-of-type(4) article:nth-of-type(1) div:nth-of-type(2) h4 {
+    padding-bottom: 3vh;
+}
+
+/* Article 2 */
+
+main section:nth-of-type(4) article:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 15vh;
+}
+
+main section:nth-of-type(4) article:nth-of-type(2) img:nth-of-type(1) {
+    width: 27vmax;
+    margin-left: 6vw;
+    margin-top: 24vh;
+    z-index: 99;
+}
+
+main section:nth-of-type(4) article:nth-of-type(2) img:nth-of-type(2) {
+    width: 54vmax;
+    margin-left: -17vw;
+}
 
 /* ===================== FOOTER ===================== */
 
 footer {
     background-color: #000;
     color: #fff;
-    padding-left: 5vmax;
+    padding-left: 8vmax;
+    padding-top: 15vh;
 }
 
-footer section:nth-of-type(1) {
+/* --------------- Section 1 - links --------------- */
+
+footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-bottom: 4vh;
 }
 
-footer section:nth-of-type(1) article {
+footer section {
     width: 45vmax;
+    padding-right: 7vw;
 }
 
+footer section:nth-of-type(1) > div:nth-of-type(1) {
+    padding: 6vh 0 18vh 0;
+}
 
+footer section:nth-of-type(1) article:nth-of-type(2) img {
+    width: 6%;
+    padding-right: 7px;
+    padding-bottom:2vh;
+}
+
+/* --------------- Section 2 - rechts --------------- */
 
 footer section:nth-of-type(2) {
+    width: 45vmax;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+
+    /* display: flex;
+    align-items: flex-end; */
+}
+
+/* Article 1 - Banner */
+
+.footerBanner {
+    overflow-x: hidden;
+    background: #fff;
+    color: #000;
+    width: 2000px;
+    transform: rotate(40deg) translateY(150%);
+  }
+
+.footerBannerAnimation {
+    font-family: "LarishNeue";
+    font-size: 6rem;
+    animation: footerBanner 3s linear infinite alternate;
+}
+
+.footerBannerAnimation span {
+    -webkit-text-stroke: 1px #000;
+    color: #fff;
+    font-family: "LarishNeue";
+    font-size: 6rem;
+}
+
+@keyframes footerBanner {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(30%);
+    }
 }
 
 footer section:nth-of-type(2) article {
-    width: 45vmax;
+    text-align: right;
+    padding-bottom: 3vh;
 }
 
-
-
-/* --------------- Section 1 --------------- */
-
-
-
-/* --------------- Section 2 --------------- */
+footer section:nth-of-type(2) article img {
+    width: 15%;
+    margin-top: 35vmax;
+}
